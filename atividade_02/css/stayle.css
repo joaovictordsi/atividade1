@@ -1,0 +1,165 @@
+body{
+    background-color: #1d73b9;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    display: grid;
+    grid-template-areas: 
+    'header header header' 
+    'aside article section'
+    'footer footer footer';
+     gap: 10px;
+
+}
+
+header{
+    grid-area: header;
+    background-color: #030596;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 ;
+   
+}
+
+aside{
+    grid-area: aside;
+   
+    padding: 10px 0;
+    
+}
+article{
+    grid-area: article;
+    
+   
+}
+section{
+    grid-area: section;
+   
+    
+}
+footer{
+    grid-area: footer;
+    
+    
+}
+
+  
+
+.logo{
+    margin-left: 0; 
+    
+}
+.logo img{
+    width: 200px; 
+    height: auto; 
+    display: block;
+}
+
+.header__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    text-decoration: none;
+}
+
+.header__nav li {
+    margin: 0 10px; 
+}
+
+.header__nav a {
+    text-decoration: none; 
+    color: rgb(250, 248, 248);          
+}
+.container-texto {
+     
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px 0; 
+    color: #ffffff;
+}
+.imagem-centro{
+     width: 500px;  
+    height: auto;   
+    display: block;
+    margin: 0 auto;
+}
+.final{
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px 0;
+    color: #ffffff;
+    text-align: center; 
+}
+.titulo{
+    color: #ffffff;
+}
+.center{
+ color: #fafbfc;
+    text-align: center; 
+}
+.maps{
+    
+    
+text-align: center;
+   
+}
+.body-imagens {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.titulo-imagem {
+  text-align: center;
+  color: #0033A0;
+  margin-bottom: 30px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 120%; height: 100%;
+}
+svg text {
+	animation: stroke 6s infinite alternate;
+	stroke-width: 2;
+	stroke: #365FA0;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,204,0); stroke: rgb(200, 204, 211); }
+	80%  {fill: rgba(72,138,204,0); stroke: rgb(69, 134, 238); stroke-width: 3; }
+	100% {
+		fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #030596};
+
